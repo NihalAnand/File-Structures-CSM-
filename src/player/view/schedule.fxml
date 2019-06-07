@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="696.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="player.view.ScheduleController">
+   <center>
+      <TableView fx:id="scheduleview" prefHeight="510.0" prefWidth="696.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="date" prefWidth="99.0" text="Date" />
+          <TableColumn fx:id="team1" prefWidth="175.0" text="Team  1" />
+            <TableColumn fx:id="vs" prefWidth="39.0" text="VS" />
+            <TableColumn fx:id="team2" prefWidth="186.0" text="Team 2" />
+            <TableColumn fx:id="venue" prefWidth="195.0" text="Venue" />
+        </columns>
+      </TableView>
+   </center>
+   <top>
+      <Label text="Schedule" textFill="#e10404" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>

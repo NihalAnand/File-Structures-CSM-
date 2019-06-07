@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="player.view.EditpointstableController">
+   <children>
+      <VBox layoutY="60.0" prefHeight="385.0" prefWidth="400.0">
+         <children>
+            <GridPane prefHeight="287.0" prefWidth="387.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="10.0" prefWidth="95.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="322.0" minWidth="10.0" prefWidth="305.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="82.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="97.0" minHeight="10.0" prefHeight="76.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="98.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="   Team1:" />
+                  <Label text="   Team2:" GridPane.rowIndex="1" />
+                  <Label text="   Result:" GridPane.rowIndex="2" />
+                  <Label text="   Net Run Rate:" GridPane.rowIndex="3" />
+                  <TextField fx:id="team1Field" prefHeight="25.0" prefWidth="249.0" style="-fx-background-radius: 10;" GridPane.columnIndex="1" />
+                  <TextField fx:id="team2Field" style="-fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="resultField" style="-fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="nrrField" style="-fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+      <Label layoutX="146.0" layoutY="14.0" text="Edit Points Table">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="168.0" layoutY="461.0" mnemonicParsing="false" onAction="#gopointstable" text="OK">
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </Button>
+      <Separator layoutX="2.0" layoutY="64.0" prefHeight="0.0" prefWidth="400.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+.root {
+    -fx-background-image: url("cricket.jpg");
+    -fx-background-size: cover;
+        -fx-background-position: center center; 
+            -fx-background-repeat: stretch;
+            
+       
+    
+    
+        
+}
+
+.button {
+    -fx-background-color: #AB4642;
+    -fx-text-fill: black ;
+    -fx-alignment: center-left;
+        
+    
+}

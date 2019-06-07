@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane id="BorderPane" prefHeight="666.0" prefWidth="863.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="player.view.AfterSearchController">
+   <top>
+      <Label prefHeight="27.0" prefWidth="141.0" text="Player Search" textFill="#ee0909" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </top>
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#buttonRemove" text="Remove" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <TableView fx:id="tableview" prefHeight="602.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="109.0" text="Name" />
+          <TableColumn fx:id="birth_place" text="Birth Place" />
+            <TableColumn fx:id="role" prefWidth="62.0" text="Role" />
+            <TableColumn fx:id="batting" prefWidth="73.0" text="Bat Style" />
+            <TableColumn fx:id="bowling" text="Bowl Style" />
+            <TableColumn fx:id="team" prefWidth="67.0" text="Team" />
+            <TableColumn fx:id="match" prefWidth="55.0" text="Matches" />
+            <TableColumn fx:id="runs" minWidth="1.0" prefWidth="39.0" text="Runs" />
+            <TableColumn fx:id="sr" prefWidth="60.0" text="SR" />
+            <TableColumn fx:id="batavg" minWidth="0.0" prefWidth="59.0" text="Bat Avg" />
+            <TableColumn fx:id="wickets" prefWidth="58.0" text="Wickets" />
+            <TableColumn fx:id="econ" prefWidth="43.0" text="Econ" />
+            <TableColumn fx:id="bowlavg" prefWidth="72.0" text="Bowl Avg" />
+        </columns>
+      </TableView>
+   </center>
+   <styleClass>
+      <String fx:value="root" />
+      <String fx:value="table-row-cell" />
+      <String fx:value="table-view" />
+      <String fx:value="tableview" />
+      <String fx:value="table-row-cell" />
+   </styleClass>
+</BorderPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1">
+    <TableView fx:id="tableview" layoutY="129.0" prefHeight="377.0" prefWidth="795.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="58.0" text="Name" />
+          <TableColumn fx:id="birth_place" prefWidth="72.0" text="Birth Place" />
+            <TableColumn fx:id="role" prefWidth="52.0" text="Role" />
+            <TableColumn fx:id="batting" prefWidth="62.0" text="Bat Style" />
+            <TableColumn fx:id="bowling" prefWidth="85.0" text="Bowl Style" />
+            <TableColumn fx:id="team" prefWidth="39.0" text="Team" />
+            <TableColumn fx:id="match" prefWidth="59.0" text="Matches" />
+            <TableColumn fx:id="runs" prefWidth="45.0" text="Runs" />
+            <TableColumn fx:id="sr" prefWidth="27.0" text="SR" />
+            <TableColumn fx:id="batavg" prefWidth="51.0" text="Bat avg" />
+            <TableColumn fx:id="wickets" prefWidth="50.0" text="Wickets" />
+            <TableColumn fx:id="econ" prefWidth="53.0" text="Econ" />
+            <TableColumn fx:id="bowlavg" text="Bowl Avg" />
+        </columns>
+      </TableView>
+</AnchorPane>

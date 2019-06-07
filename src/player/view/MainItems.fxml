@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane id="BorderPane" prefHeight="507.0" prefWidth="664.0" styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="player.view.MainItemsController">
+   <center>
+      <FlowPane hgap="20.0" prefHeight="633.0" prefWidth="1089.0" vgap="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="400.0" prefWidth="687.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quickand; -fx-font-weight: bolder; -fx-font-size: 2.4em; -fx-fill: white;" text="                                Cricket Statistics Application" wrappingWidth="674.3562316894531">
+                     <effect>
+                        <DropShadow />
+                     </effect></Text>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="20.0" top="20.0" />
+         </padding>
+      </FlowPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button alignment="CENTER" layoutX="48.0" layoutY="100.0" mnemonicParsing="false" onAction="#goplayerdetail" prefHeight="47.0" prefWidth="119.0" style="-fx-background-color: transparent; -fx-background-size: cover; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white; -fx-font-size: 1.5em;" stylesheets="@style.css" text="PLAYERS" textFill="#1b0202" />
+            <Button layoutX="189.0" layoutY="99.0" mnemonicParsing="false" onAction="#goscheduletable" prefHeight="49.0" prefWidth="119.0" style="-fx-background-color: transparent; -fx-background-size: cover; -fx-text-fill: black; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white; -fx-font-size: 1.5em;" text="SCHEDULE" textFill="#1b0202" />
+            <Button layoutX="357.0" layoutY="98.0" mnemonicParsing="false" onAction="#gosearch" prefHeight="50.0" prefWidth="116.0" style="-fx-background-color: transparent; -fx-text-fill: black; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white; -fx-font-size: 1.5em;" text="SEARCH" textFill="#1b0202" />
+            <Button layoutX="520.0" layoutY="100.0" mnemonicParsing="false" onAction="#gopointstable" prefHeight="48.0" prefWidth="142.0" style="-fx-background-color: transparent; -fx-text-fill: black; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white; -fx-font-size: 1.5em;" text="POINTS TABLE" textFill="#1b0202" />
+            <Button layoutX="705.0" layoutY="99.0" mnemonicParsing="false" onAction="#goshowtable" prefHeight="48.0" prefWidth="107.0" style="-fx-background-color: transparent; -fx-text-fill: black; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white; -fx-font-size: 1.5em;" text="SQUAD" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

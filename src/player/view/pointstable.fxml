@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="player.view.PointstableController">
+   <top>
+      <Label text="Points Table" textFill="#eb0303" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <TableView fx:id="viewtable" prefHeight="463.0" prefWidth="668.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="teams" prefWidth="210.0" text="Teams" />
+            <TableColumn fx:id="matches" prefWidth="72.0" text="Played" />
+            <TableColumn fx:id="won" minWidth="2.0" prefWidth="64.0" text="Won" />
+            <TableColumn fx:id="lost" minWidth="0.0" prefWidth="72.0" text="Lost" />
+            <TableColumn fx:id="draw" prefWidth="62.0" text="Draw" />
+            <TableColumn fx:id="points" prefWidth="88.0" text="Points" />
+            <TableColumn fx:id="nrr" prefWidth="159.0" text="Net Run Rate" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

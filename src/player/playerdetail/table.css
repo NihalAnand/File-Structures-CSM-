@@ -1,0 +1,33 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 Apr, 2019, 5:39:10 PM
+    Author     : Nihal Anand
+*/
+
+.root{
+    -fx-background-color: #00bfff;
+    
+}
+
+.tableview{
+    -fx-background-color: transparent;
+}  
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+.table-row-cell:odd{
+    -fx-background-color: #B2EBF2;
+    -fx-border-insets: 0, 0 0 1 0;
+   
+}
+.table-row-cell:even{
+    -fx-background-color: #DCEDC8;
+    -fx-border-insets: 0, 0 0 1 0;
+   
+}
